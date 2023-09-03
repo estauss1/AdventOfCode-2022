@@ -1,0 +1,33 @@
+objective: 
+-using the input, sum up the total points you scored based on the moves
+  played and whether you lost, tied, or won the round
+
+opponent moves: A is Rock, B is Paper, C is Scissors
+your moves: X is Rock, Y is Paper, Z is Scissors
+
+X (Rock) is one point  
+Y (Paper) is two points
+Z (Scissors) is three points
+
+loss - 0 points added
+draw - 3 points added 
+win -  6 points added 
+
+X draws against A, loses against B, and wins against C 
+Y wins against A, draws against B, and loses against C 
+Z loses against A, wins against B, and draws against C 
+
+when opponent plays:
+A you play Y
+B you paly X
+C you play Z
+
+algorithm:
+
+-extract the opponent and player chars using istream get()
+-pass the characters to roundscore which takes the chars as arguments
+  and returns the points that player earned in the round
+-keep a running total of player points
+-extract some more characters and loop if they arent EOF
+
+

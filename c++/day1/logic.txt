@@ -1,0 +1,6 @@
+-input is the amount of calories that each elf is carrying
+-each line of input file has one item's calories
+-elf inventories are seperated by a blank line
+goal: output the calories of the elf carrying most calories out of the
+  elves.
+
